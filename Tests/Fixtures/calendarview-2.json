@@ -1,0 +1,47 @@
+{
+  "@odata.context": "…",
+  "value": [
+    {
+      "@odata.etag": "W/\"DwAAABYAAA0004\"",
+      "id": "AAMkCancel-0004",
+      "createdDateTime": "2026-11-01T10:00:00.1234567Z",
+      "lastModifiedDateTime": "2026-11-10T09:12:44.1234567Z",
+      "changeKey": "ck-0004",
+      "originalStartTimeZone": "tzone://Microsoft/Custom",
+      "originalEndTimeZone": "tzone://Microsoft/Custom",
+      "iCalUId": "040000008200E00074C5B7101A82E008-0004",
+      "subject": "Audience reportée",
+      "bodyPreview": "",
+      "body": {
+        "contentType": "text",
+        "content": ""
+      },
+      "isAllDay": false,
+      "isCancelled": true,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAMkCancel-0004&exvsurl=1&path=/calendar/item",
+      "seriesMasterId": null,
+      "start": {
+        "dateTime": "2026-12-28T13:00:00.0000000",
+        "timeZone": "UTC"
+      },
+      "end": {
+        "dateTime": "2026-12-28T15:00:00.0000000",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "displayName": "",
+        "locationType": "default"
+      },
+      "recurrence": null,
+      "attendees": [],
+      "organizer": {
+        "emailAddress": {
+          "name": "Anna Martin",
+          "address": "anna@contoso.example"
+        }
+      }
+    }
+  ]
+}

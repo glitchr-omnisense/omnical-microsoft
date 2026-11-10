@@ -1,0 +1,41 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('me')/calendars",
+  "value": [
+    {
+      "id": "AAMkAGI2-shared=",
+      "name": "Planning du cabinet",
+      "color": "lightGreen",
+      "hexColor": "#8bc34a",
+      "isDefaultCalendar": false,
+      "changeKey": "ck-cal-2",
+      "canShare": false,
+      "canViewPrivateItems": false,
+      "canEdit": false,
+      "allowedOnlineMeetingProviders": [
+        "teamsForBusiness"
+      ],
+      "defaultOnlineMeetingProvider": "teamsForBusiness",
+      "isTallyingResponses": false,
+      "isRemovable": true,
+      "owner": {
+        "name": "Cabinet",
+        "address": "cabinet@contoso.example"
+      }
+    },
+    {
+      "id": "AAMkAGI2-default=",
+      "name": "Calendar",
+      "color": "auto",
+      "hexColor": "",
+      "isDefaultCalendar": true,
+      "changeKey": "ck-cal-1",
+      "canShare": true,
+      "canViewPrivateItems": true,
+      "canEdit": true,
+      "owner": {
+        "name": "Anna Martin",
+        "address": "anna@contoso.example"
+      }
+    }
+  ]
+}

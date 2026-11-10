@@ -1,0 +1,54 @@
+{
+  "@odata.etag": "W/\"DwAAABYAAA0005\"",
+  "id": "AAMkNew-0005",
+  "createdDateTime": "2026-11-01T10:00:00.1234567Z",
+  "lastModifiedDateTime": "2026-11-10T09:12:44.1234567Z",
+  "changeKey": "ck-0005",
+  "originalStartTimeZone": "Europe/Paris",
+  "originalEndTimeZone": "Europe/Paris",
+  "iCalUId": "040000008200E00074C5B7101A82E008-0005",
+  "subject": "Consultation",
+  "bodyPreview": "",
+  "body": {
+    "contentType": "text",
+    "content": "Premier rendez-vous"
+  },
+  "isAllDay": false,
+  "isCancelled": false,
+  "showAs": "busy",
+  "type": "singleInstance",
+  "webLink": "https://outlook.office365.com/owa/?itemid=AAMkNew-0005&exvsurl=1&path=/calendar/item",
+  "seriesMasterId": null,
+  "start": {
+    "dateTime": "2026-11-23T09:00:00.0000000",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-11-23T09:45:00.0000000",
+    "timeZone": "UTC"
+  },
+  "location": {
+    "displayName": "",
+    "locationType": "default"
+  },
+  "recurrence": null,
+  "attendees": [
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Paul Durand",
+        "address": "paul.durand@fabrikam.example"
+      }
+    }
+  ],
+  "organizer": {
+    "emailAddress": {
+      "name": "Anna Martin",
+      "address": "anna@contoso.example"
+    }
+  }
+}

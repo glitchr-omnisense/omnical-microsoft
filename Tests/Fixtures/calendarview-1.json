@@ -1,0 +1,166 @@
+{
+  "@odata.context": "…",
+  "value": [
+    {
+      "@odata.etag": "W/\"DwAAABYAAA0001\"",
+      "id": "AAMkOcc-0001",
+      "createdDateTime": "2026-11-01T10:00:00.1234567Z",
+      "lastModifiedDateTime": "2026-11-10T09:12:44.1234567Z",
+      "changeKey": "ck-0001",
+      "originalStartTimeZone": "Romance Standard Time",
+      "originalEndTimeZone": "Romance Standard Time",
+      "iCalUId": "040000008200E00074C5B7101A82E008-0001",
+      "subject": "Point hebdomadaire",
+      "bodyPreview": "",
+      "body": {
+        "contentType": "text",
+        "content": ""
+      },
+      "isAllDay": false,
+      "isCancelled": false,
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAMkOcc-0001&exvsurl=1&path=/calendar/item",
+      "seriesMasterId": "AAMkSeries-0009",
+      "start": {
+        "dateTime": "2026-11-16T07:00:00.0000000",
+        "timeZone": "UTC"
+      },
+      "end": {
+        "dateTime": "2026-11-16T07:30:00.0000000",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "displayName": "",
+        "locationType": "default"
+      },
+      "recurrence": null,
+      "attendees": [],
+      "organizer": {
+        "emailAddress": {
+          "name": "Anna Martin",
+          "address": "anna@contoso.example"
+        }
+      },
+      "originalStart": "2026-11-16T07:00:00Z"
+    },
+    {
+      "@odata.etag": "W/\"DwAAABYAAA0002\"",
+      "id": "AAMkMeet-0002",
+      "createdDateTime": "2026-11-01T10:00:00.1234567Z",
+      "lastModifiedDateTime": "2026-11-10T09:12:44.1234567Z",
+      "changeKey": "ck-0002",
+      "originalStartTimeZone": "Romance Standard Time",
+      "originalEndTimeZone": "Romance Standard Time",
+      "iCalUId": "040000008200E00074C5B7101A82E008-0002",
+      "subject": "Consultation",
+      "bodyPreview": "",
+      "body": {
+        "contentType": "text",
+        "content": "Dossier Durand"
+      },
+      "isAllDay": false,
+      "isCancelled": false,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAMkMeet-0002&exvsurl=1&path=/calendar/item",
+      "seriesMasterId": null,
+      "start": {
+        "dateTime": "2026-11-16T09:00:00.0000000",
+        "timeZone": "UTC"
+      },
+      "end": {
+        "dateTime": "2026-11-16T09:45:00.0000000",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "displayName": "Cabinet, salle 2"
+      },
+      "recurrence": null,
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "2026-11-02T10:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Paul Durand",
+            "address": "Paul.Durand@fabrikam.example"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "2026-11-02T10:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Léa Roux",
+            "address": "lea@fabrikam.example"
+          }
+        },
+        {
+          "type": "resource",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Salle 2",
+            "address": "salle2@contoso.example"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Anna Martin",
+          "address": "anna@contoso.example"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"DwAAABYAAA0003\"",
+      "id": "AAMkClosed-0003",
+      "createdDateTime": "2026-11-01T10:00:00.1234567Z",
+      "lastModifiedDateTime": "2026-11-10T09:12:44.1234567Z",
+      "changeKey": "ck-0003",
+      "originalStartTimeZone": "Romance Standard Time",
+      "originalEndTimeZone": "Romance Standard Time",
+      "iCalUId": "040000008200E00074C5B7101A82E008-0003",
+      "subject": "Fermeture",
+      "bodyPreview": "",
+      "body": {
+        "contentType": "text",
+        "content": ""
+      },
+      "isAllDay": true,
+      "isCancelled": false,
+      "showAs": "free",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAMkClosed-0003&exvsurl=1&path=/calendar/item",
+      "seriesMasterId": null,
+      "start": {
+        "dateTime": "2026-12-24T00:00:00.0000000",
+        "timeZone": "UTC"
+      },
+      "end": {
+        "dateTime": "2026-12-27T00:00:00.0000000",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "displayName": "",
+        "locationType": "default"
+      },
+      "recurrence": null,
+      "attendees": [],
+      "organizer": {
+        "emailAddress": {
+          "name": "Anna Martin",
+          "address": "anna@contoso.example"
+        }
+      }
+    }
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/calendars/AAMkAGI2-default=/calendarView?startDateTime=2026-11-16T00%3a00%3a00Z&endDateTime=2026-12-31T00%3a00%3a00Z&%24top=10&%24orderby=start%2fdateTime&%24skip=3"
+}

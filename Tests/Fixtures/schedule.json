@@ -1,0 +1,90 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
+  "value": [
+    {
+      "scheduleId": "anna@contoso.example",
+      "availabilityView": "0022001",
+      "scheduleItems": [
+        {
+          "isPrivate": false,
+          "status": "busy",
+          "subject": "Consultation",
+          "location": "Cabinet",
+          "start": {
+            "dateTime": "2026-11-16T09:00:00.0000000",
+            "timeZone": "UTC"
+          },
+          "end": {
+            "dateTime": "2026-11-16T10:00:00.0000000",
+            "timeZone": "UTC"
+          }
+        },
+        {
+          "isPrivate": true,
+          "status": "tentative",
+          "start": {
+            "dateTime": "2026-11-16T11:00:00.0000000",
+            "timeZone": "UTC"
+          },
+          "end": {
+            "dateTime": "2026-11-16T11:30:00.0000000",
+            "timeZone": "UTC"
+          }
+        },
+        {
+          "isPrivate": false,
+          "status": "workingElsewhere",
+          "start": {
+            "dateTime": "2026-11-16T13:00:00.0000000",
+            "timeZone": "UTC"
+          },
+          "end": {
+            "dateTime": "2026-11-16T17:00:00.0000000",
+            "timeZone": "UTC"
+          }
+        }
+      ],
+      "workingHours": {
+        "daysOfWeek": [
+          "monday",
+          "tuesday",
+          "wednesday",
+          "thursday",
+          "friday"
+        ],
+        "startTime": "08:00:00.0000000",
+        "endTime": "17:00:00.0000000",
+        "timeZone": {
+          "name": "Romance Standard Time"
+        }
+      }
+    },
+    {
+      "scheduleId": "paul@fabrikam.example",
+      "availabilityView": "",
+      "scheduleItems": [],
+      "error": {
+        "message": "Unable to retrieve free/busy information for the user.",
+        "responseCode": "ErrorFreeBusyGenerateFailed"
+      }
+    },
+    {
+      "scheduleId": "lea@contoso.example",
+      "availabilityView": "3333333",
+      "scheduleItems": [
+        {
+          "isPrivate": false,
+          "status": "oof",
+          "start": {
+            "dateTime": "2026-11-16T07:00:00.0000000",
+            "timeZone": "UTC"
+          },
+          "end": {
+            "dateTime": "2026-11-16T17:00:00.0000000",
+            "timeZone": "UTC"
+          }
+        }
+      ]
+    }
+  ]
+}
