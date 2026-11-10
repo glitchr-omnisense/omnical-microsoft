@@ -3,12 +3,14 @@
     "provider": "microsoft",
     "rateLimits": [
         {
-            "max": 1000,
+            "max": 10000,
             "window": "minute",
+            "every": 10,
             "scope": "user",
-            "note": "Outlook's limit is 10,000 API requests in any 10 minutes per app and mailbox, with 4 requests at a time and 150 MB uploaded (PATCH, POST, PUT) per 5 minutes; the schema has no 10-minute window, so 1,000 a minute per user (mailbox) is declared: never more than the real limit in any 10 minutes. Above it Graph answers 429 with Retry-After, which the client honours. The global limit is 130,000 requests per 10 seconds per app across all tenants."
+            "note": "Outlook's limit: 10,000 API requests in any 10 minutes per app and mailbox, with 4 requests at a time and 150 MB uploaded (PATCH, POST, PUT) per 5 minutes; counted per user (mailbox). Above it Graph answers 429 with Retry-After, which the client honours. The global limit is 130,000 requests per 10 seconds per app across all tenants."
         }
     ],
+    "concurrency": 4,
     "rights": {
         "commercial": "allowed",
         "openSourceRequired": false,

@@ -161,9 +161,8 @@ the write goes through as it is.
 - **Rate:**
   - Outlook allows 10,000 requests in any 10 minutes per application and mailbox, 4 at a time,
     and 150 MB of uploads per 5 minutes.
-  - The schema has no 10-minute window, so **1,000 a minute per user** is declared. It never
-    exceeds the real limit, and it counts per the `$user` given to `Registry::calendarEvents()` and
-    `freeBusy()`.
+  - Declared as it is, **10,000 every 10 minutes per user** (`"every": 10`), counted per the
+    `$user` given to `Registry::calendarEvents()` and `freeBusy()`, and `"concurrency": 4`.
   - A 429 and its `Retry-After` hold every call until the wait is over.
 - **Rights:**
   - commercial use allowed: no ban, though Microsoft may set fees;

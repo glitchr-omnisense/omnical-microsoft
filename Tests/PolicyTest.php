@@ -20,7 +20,9 @@ final class PolicyTest extends TestCase
         $policy = self::registry([])->policy('outlook');
 
         self::assertSame('microsoft', $policy->provider);
-        self::assertSame(['1000/minute/user/*'], array_map(static fn ($l) => $l->id(), $policy->rateLimits ?? []));
+        self::assertSame(['10000/10minute/user/*'], array_map(static fn ($l) => $l->id(), $policy->rateLimits ?? []));
+        self::assertSame(600, ($policy->rateLimits ?? [])[0]->seconds(), 'any 10 minutes, not 1,000 a minute');
+        self::assertSame(4, $policy->concurrency, '4 requests at a time per mailbox');
         self::assertSame(Scope::User, ($policy->rateLimits ?? [])[0]->scope);
         self::assertStringContainsString('10,000 API requests in any 10 minutes', (string) ($policy->rateLimits ?? [])[0]->note);
         self::assertSame([Permission::Allowed, Permission::Forbidden, false], [$policy->rights->commercial, $policy->rights->redistribution, $policy->rights->attribution->required]);
@@ -48,7 +50,8 @@ final class PolicyTest extends TestCase
     public function testASiteCannotRaiseTheLimit(): void
     {
         $this->expectException(InvalidPolicyException::class);
-        self::registry(['rateLimits' => [['max' => 5000, 'window' => 'minute', 'scope' => 'user']]])->calendarEvents('outlook');
+        // Over the declared 10,000 every 10 minutes: a limit of another window adds to it, it never replaces it.
+        self::registry(['rateLimits' => [['max' => 20000, 'window' => 'minute', 'every' => 10, 'scope' => 'user']]])->calendarEvents('outlook');
     }
 
     /** @param array<string, mixed> $policy */
